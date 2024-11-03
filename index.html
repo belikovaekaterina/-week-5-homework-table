@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verstka week 5</title> 
+
+    <style>
+        .header {
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-container {
+            display: flex;
+            height: 400px; 
+        }
+
+        .left-container {
+            flex: 2; 
+            background-color: #FFF9C4; 
+            padding: 20px;
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start; 
+            gap: 10px;
+            align-items: flex-end;
+        }
+
+        .right-container {
+            flex: 1; 
+            background-color: lightseagreen; 
+            padding: 20px;
+        }
+
+        .left-item {
+            background-color: #FFEB3B; 
+            padding: 10px; 
+            border: 1px solid #FFD600; /
+            text-align: center; 
+            box-sizing: border-box;
+    
+        }
+
+        .left-item:nth-child(1),
+        .left-item:nth-child(2) {
+            width: calc(50% - 10px); 
+        
+        }
+
+        .left-item:nth-child(3) {
+            width: 100%; 
+            height: 70px;
+        
+        }
+
+        .footer {
+            background-color: grey;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .footer-item {
+            background-color: #c4c3b9; 
+            padding: 10px; 
+            text-align: center; 
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            Шапка страницы 
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="left-container">
+                <div class="left-item">Еще 1</div> 
+                <div class="left-item">Еще 2</div> 
+                <div class="left-item">Еще 3</div> 
+            </div>
+
+            <div class="right-container">
+                Боковая область
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+            <div class="footer-item">Секция футера 1</div> 
+            <div class="footer-item">Секция футера 2</div> 
+            <div class="footer-item">Секция футера 3</div> 
+            <div class="footer-item">Секция футера 4</div> 
+        </div>
+
+
+</body>
+
+
+
+</html>
+
